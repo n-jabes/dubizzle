@@ -1,0 +1,11 @@
+/* ============================= ROOT =================================== */
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: proxima-nova,noto,helvetica,arial,sans-serif;
+  font-size: 16px;
+}
+
+/* ============================= END OF ROOT ============================ */
