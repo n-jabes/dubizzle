@@ -4,8 +4,177 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
-  font-family: proxima-nova,noto,helvetica,arial,sans-serif;
-  font-size: 16px;
+  font-family: proxima-nova, noto, helvetica, arial, sans-serif;
 }
 
 /* ============================= END OF ROOT ============================ */
+
+/* ============================= PAGES ============================ */
+.home {
+  width: 100vw;
+  height: 100vh;
+}
+
+.headerContainer {
+  width: 100%;
+  border-bottom: 1px solid rgba(146, 146, 146, 0.2);
+  justify-content: center;
+}
+
+/* ============================= END OF PAGES ============================ */
+
+/* ============================= HEADER ============================ */
+.header {
+  width: 80%;
+}
+
+.left {
+  flex: 2;
+}
+
+.logo {
+  font-size: 36px;
+}
+
+.select{
+  font-size: 17px;
+}
+
+.header-icon {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.header-btn {
+  border: none;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.right {
+  flex: 5;
+}
+
+.new {
+  background-color: rgb(30, 143, 30);
+  padding: 1px 3px;
+  border-radius: 8px;
+  top: 0;
+  right: -1px;
+  color: aliceblue;
+  font-size: 8px;
+}
+
+.login {
+  background-color: transparent;
+  border: none;
+  margin: 0px 15px;
+}
+
+.placeAd {
+  padding: 10px 20px !important;
+  height: max-content;
+  background-color: rgb(13, 132, 243);
+  color: aliceblue;
+}
+
+/* ============================= END OF HEADER ============================ */
+
+
+/* ============================= NAVBAR ============================ */
+.navbar{
+  width: 80%;
+  background-color: gray;
+}
+
+/* ============================= END OF NAVBAR ============================ */
+
+
+/* ==================================== styled classes =========================== */
+.d-flex {
+  display: flex;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.p-15 {
+  padding-right: 15px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.fz-14 {
+  font-size: 14px;
+}
+
+.light-gray {
+  color: #666b72;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.border-radius-8 {
+  border-radius: 8px;
+}
+
+.border-none {
+  border: none;
+}
+
+.fw-bold{
+  font-weight: bold;
+}
+
+.outline-none{
+  outline: none;
+}
+
+.w-80p{
+  width: 80%;
+}
+.w-100p{
+  width: 100%;
+}
+/* ==================================== end styled classes =========================== */
