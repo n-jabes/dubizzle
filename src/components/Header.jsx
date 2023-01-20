@@ -1,4 +1,4 @@
-import { BiBell, BiChevronDown, BiHeart } from 'react-icons/bi';
+import { BiBell, BiHeart } from 'react-icons/bi';
 import { TbReportSearch } from 'react-icons/tb';
 import { BsChatText, BsCardList } from 'react-icons/bs';
 
@@ -6,27 +6,27 @@ export function Header() {
   const headerLinks = [
     {
       id: 1,
-      icon: <BiBell />,
+      icon: <BiBell className="headerIcon" />,
       title: 'Notifications',
     },
     {
       id: 2,
-      icon: <TbReportSearch />,
+      icon: <TbReportSearch className="headerIcon" />,
       title: 'My Searches',
     },
     {
       id: 3,
-      icon: <BiHeart />,
+      icon: <BiHeart className="headerIcon" />,
       title: 'Favorites',
     },
     {
       id: 4,
-      icon: <BsChatText />,
+      icon: <BsChatText className="headerIcon" />,
       title: 'Chats',
     },
     {
       id: 5,
-      icon: <BsCardList />,
+      icon: <BsCardList className="headerIcon" />,
       title: 'My ads',
     },
     {
@@ -48,20 +48,20 @@ export function Header() {
             className="d-flex flex-direction-column align-items-center header-btn cursor-pointer position-relative"
           >
             <span className="header-icon light-gray">{link.icon}</span>
-            <span className="fz-14 light-gray">{link.title}</span>
+            <span className="light-gray">{link.title}</span>
             <div className="new position-absolute">NEW</div>
           </button>
         );
       } else if (link.id === 6) {
         return (
-          <button className="login cursor-pointer">
-            <span className="fz-14">{link.title}</span>
+          <button className="login cursor-pointer bg-transparent">
+            <span className="">{link.title}</span>
           </button>
         );
       } else if (link.id === 7) {
         return (
           <button className="placeAd cursor-pointer border-radius-8 border-none">
-            <span className="fz-14 fw-bold">{link.title}</span>
+            <span className="fw-bold">{link.title}</span>
           </button>
         );
       } else {
@@ -71,7 +71,7 @@ export function Header() {
             className="d-flex flex-direction-column align-items-center header-btn cursor-pointer"
           >
             <span className="header-icon light-gray">{link.icon}</span>
-            <span className="fz-14 light-gray">{link.title}</span>
+            <span className="light-gray">{link.title}</span>
           </button>
         );
       }
@@ -85,7 +85,11 @@ export function Header() {
       <div className="left d-flex align-items-center">
         <span className="logo p-15 fw-600">dubizzle</span>
         <span className="location d-flex flex-direction-row align-items-center">
-          <select name="" id="" className="select border-none outline-none cursor-pointer">
+          <select
+            name=""
+            id=""
+            className="select border-none outline-none cursor-pointer"
+          >
             <option value="Dubai">Dubai</option>
             <option value="Kigali">Kigali</option>
             <option value="Musanze">Musanze</option>

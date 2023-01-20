@@ -1,10 +1,12 @@
 /* ============================= ROOT =================================== */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 * {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  font-family: proxima-nova, noto, helvetica, arial, sans-serif;
+  font-family: poppins, proxima-nova, noto, helvetica, arial, sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
 }
 
 /* ============================= END OF ROOT ============================ */
@@ -13,12 +15,76 @@
 .home {
   width: 100vw;
   height: 100vh;
+  background-color: rgb(253, 253, 253);
 }
 
 .headerContainer {
   width: 100%;
   border-bottom: 1px solid rgba(146, 146, 146, 0.2);
   justify-content: center;
+}
+
+.searchSection {
+  background-image: url(https://ychef.files.bbci.co.uk/976x549/p07y6m73.jpg);
+  /* background-color: green; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 2% 6% 3% 6%;
+  color: #fff;
+}
+
+.searchSection > .heading {
+  padding-bottom: 20px;
+}
+
+.searchSection > .heading > p {
+  padding: 0 5px;
+  font-size: 26px;
+}
+
+.searchContainer {
+  background-color: rgba(0, 0, 0, 0.37);
+  padding: 2% 2%;
+}
+
+.searchContainer > .addresses {
+  width: 90%;
+}
+.searchContainer > .addresses > .search-in {
+  margin-right: 3%;
+}
+
+.searchContainer > .addresses > .address {
+  padding: 5px 15px;
+  justify-content: space-between;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.searchContainer > .addresses > .address.active {
+  padding: 5px 15px;
+  background-color: rgb(12, 124, 230);
+}
+
+.searchContainer > .search-form {
+  width: 95%;
+  margin-top: 2%;
+}
+.searchContainer > .search-form > input {
+  width: 90%;
+}
+
+.searchContainer > .search-form > .search-btn {
+  margin-left: 2%;
+  width: 18%;
+  background-color: rgb(10, 110, 204);
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.searchContainer > .search-form > .search-btn:hover {
+  background-color: rgb(22, 120, 211);
 }
 
 /* ============================= END OF PAGES ============================ */
@@ -36,59 +102,156 @@
   font-size: 36px;
 }
 
-.select{
-  font-size: 17px;
-}
-
-.header-icon {
-  font-size: 20px;
-  font-weight: lighter;
-}
-
-.header-btn {
-  border: none;
-  margin: 10px;
-  background-color: transparent;
+.select {
+  font-size: 14px;
 }
 
 .right {
   flex: 5;
 }
 
+.headerIcon {
+  font-size: 18px;
+}
+
+.header-btn {
+  border: none;
+  margin: 3px;
+  padding: 7px;
+  background-color: transparent;
+}
+
 .new {
-  background-color: rgb(30, 143, 30);
-  padding: 1px 3px;
+  background-color: rgb(53, 197, 53);
+  padding: 1px 5px;
   border-radius: 8px;
   top: 0;
-  right: -1px;
-  color: aliceblue;
+  right: 0px;
+  color: rgb(250, 250, 250);
   font-size: 8px;
+  font-weight: 500;
 }
 
 .login {
-  background-color: transparent;
-  border: none;
+  border: 1px solid transparent;
   margin: 0px 15px;
+  height: 100%;
+  padding: 0 5px;
+}
+
+.login:hover {
+  background-color: #fff;
+  border: transparent;
+  border-left: 1px solid rgba(0, 0, 0, 0.07);
+  border-right: 1px solid rgba(0, 0, 0, 0.07);
+}
+.login:hover > span {
+  background-color: #fff;
 }
 
 .placeAd {
   padding: 10px 20px !important;
   height: max-content;
   background-color: rgb(13, 132, 243);
-  color: aliceblue;
+  color: rgb(252, 252, 252);
 }
 
+.placeAd > span {
+  background-color: rgb(13, 132, 243);
+}
+
+.placeAd:hover,
+.placeAd:hover > span {
+  background-color: rgb(12, 124, 230);
+}
 /* ============================= END OF HEADER ============================ */
 
-
 /* ============================= NAVBAR ============================ */
-.navbar{
-  width: 80%;
-  background-color: gray;
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 15px;
+  transition: 0.5s all ease;
+  border-bottom: 5px solid transparent;
+}
+
+.nav-item:hover {
+  border-bottom: 5px solid #000;
+}
+
+.nav-item:hover .submenu {
+  display: block;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #2b2d2e;
+}
+
+.submenu {
+  border-radius: 0 0 6px 6px;
+  /* background-color: rgb(241, 241, 241); */
+  background-color: rgb(253, 253, 253);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  top: 18.2%;
+  display: none;
+  font-weight: 500;
+  width: 17rem;
+  padding-bottom: 10px;
+}
+
+/* .submenuContainer {
+  background-color: rgba(0, 0, 0, 0.637);
+  width: 100%;
+  height: 100vh;
+}
+
+.submenu .left {
+  background-color: #fff;
+  padding-bottom: 10px;
+  flex: 4;
+}
+
+.submenu .right {
+  flex: 8;
+  display: none;
+}
+
+.submenu .right .top {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+} */
+
+.submenu-item {
+  cursor: pointer;
+  padding: 8px 20px;
+}
+
+.submenu-item:hover {
+  font-weight: bold;
+  background-color: rgba(241, 241, 241, 0.555);
+  color: rgb(16, 117, 212);
+}
+
+.horizontal-line {
+  width: 90%;
+  margin: 7.5% 4.5% 5% 4.5%;
+}
+
+.lower-link {
+  font-weight: bold;
+  color: rgb(16, 117, 212);
+  padding: 2% 12%;
+}
+
+.lower-link:hover {
+  background-color: rgba(241, 241, 241, 0.959);
 }
 
 /* ============================= END OF NAVBAR ============================ */
-
 
 /* ==================================== styled classes =========================== */
 .d-flex {
@@ -111,7 +274,8 @@
   padding-right: 15px;
 }
 
-.fw-600 {
+.fw-600,
+.menuItem {
   font-weight: 600;
 }
 
@@ -127,8 +291,21 @@
   font-size: 14px;
 }
 
+.thin {
+  border: 0.05px solid rgba(146, 146, 146, 0.125);
+}
+
+.padding-16 {
+  padding: 16px;
+}
+
 .light-gray {
   color: #666b72;
+}
+
+.dark-gray,
+.menuItem {
+  color: #2b2d2e;
 }
 
 .text-align-right {
@@ -163,18 +340,69 @@
   border: none;
 }
 
-.fw-bold{
+.fw-bold {
   font-weight: bold;
 }
 
-.outline-none{
+.fw-800 {
+  font-weight: 800;
+}
+
+.fz-24 {
+  font-size: 24px;
+}
+
+.fz-16 {
+  font-size: 16px;
+}
+
+.outline-none {
   outline: none;
 }
 
-.w-80p{
+.w-80p {
   width: 80%;
 }
-.w-100p{
+
+.w-100p {
   width: 100%;
 }
+
+.w-max-content {
+  width: max-content;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.ml-10p {
+  margin-left: 10%;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.color-blue {
+  color: rgb(16, 117, 212);
+}
+
+
 /* ==================================== end styled classes =========================== */
