@@ -54,13 +54,13 @@ export function Header() {
         );
       } else if (link.id === 6) {
         return (
-          <button className="login cursor-pointer bg-transparent">
+          <button key={link.id} className="login cursor-pointer bg-transparent">
             <span className="">{link.title}</span>
           </button>
         );
       } else if (link.id === 7) {
         return (
-          <button className="placeAd cursor-pointer border-radius-8 border-none">
+          <button key={link.id} className="placeAd cursor-pointer border-radius-8 border-none">
             <span className="fw-bold">{link.title}</span>
           </button>
         );
@@ -83,7 +83,7 @@ export function Header() {
   return (
     <div className="header d-flex">
       <div className="left d-flex align-items-center">
-        <span className="logo p-15 fw-600">dubizzle</span>
+        <span className="logo p-15 fw-600 pr-15">dubizzle</span>
         <span className="location d-flex flex-direction-row align-items-center">
           <select
             name=""

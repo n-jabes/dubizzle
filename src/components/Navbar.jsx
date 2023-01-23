@@ -7,7 +7,7 @@ export function Navbar() {
   return (
     <>
       <nav className="navbar w-100p d-flex justify-content-center">
-        <ul className="nav-items w-80p d-flex align-items-center justify-content-space-between fw-600 fz-14">
+        <ul className="nav-items w-85p d-flex align-items-center justify-content-space-between fw-600 fz-14">
           <li className="nav-item">
             <Link to="/">Motors</Link>
             <ul className="submenu position-absolute">
