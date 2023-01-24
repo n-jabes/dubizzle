@@ -628,4 +628,41 @@ export const popularInFurnitureAndGarden = [
   },
 ];
 
-
+export const footerResources = [
+  {
+    id: 0,
+    title: 'Company',
+    links: [
+      'About Us',
+      'Advertising',
+      'Career',
+      'Terms of Use',
+      'Privacy Policy',
+    ],
+  },
+  {
+    id: 1,
+    title: 'Rwanda',
+    links: ['Kigali', 'Musanze', 'Rubavu', 'Muhanga', 'Huye', 'Bugesera'],
+  },
+  {
+    id: 2,
+    title: 'Other Countries',
+    links: ['Uganda', 'Tanzania', 'Burundi', 'Kenya', 'Mozambique'],
+  },
+  {
+    id: 3,
+    title: 'Get Social',
+    links: ['Facebook', 'Twitter', 'Youtube', 'Instagram'],
+  },
+  {
+    id: 4,
+    title: 'Support',
+    links: ['Help', 'Contact Us', 'Call Us'],
+  },
+  {
+    id: 5,
+    title: 'Languages',
+    links: ['English', 'Kinyarwanda'],
+  },
+];

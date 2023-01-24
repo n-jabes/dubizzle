@@ -170,9 +170,30 @@
 }
 
 .footerComponent {
-  background-color: green;
-  height: 2vh;
+  background-color: #eeeeee;
+  padding: 3% 0%;
+  font-size: 15px;
 }
+
+.footerComponent > .footer {
+  width: 80%;
+}
+
+
+.footerComponent > .footer > .titles {
+  display: flex;
+}
+
+
+.footerComponent > .footer > .titles > .title > .link {
+  font-weight: 500;
+}
+
+.footerComponent > .footer > .titles > .title > .link:hover {
+  text-decoration: underline;
+  color: rgb(16, 117, 212);
+}
+
 /* ============================= END OF PAGES ============================ */
 
 /* ============================= HEADER ============================ */

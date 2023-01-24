@@ -1,3 +1,4 @@
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { Navbar } from '../components/Navbar';
 import {
@@ -323,7 +324,9 @@ export function HomePage() {
         </div>
       </div>
 
-      <div className="footerComponent w-100p mt-2p"></div>
+      <div className="footerComponent w-100p mt-2p">
+        <Footer />
+      </div>
     </div>
   );
 }
