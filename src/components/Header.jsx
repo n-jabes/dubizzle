@@ -2,7 +2,7 @@ import { BiBell, BiHeart } from 'react-icons/bi';
 import { TbReportSearch } from 'react-icons/tb';
 import { BsChatText, BsCardList } from 'react-icons/bs';
 
-export function Header() {
+export function Header({openModel}) {
   const headerLinks = [
     {
       id: 1,
@@ -54,7 +54,7 @@ export function Header() {
         );
       } else if (link.id === 6) {
         return (
-          <button key={link.id} className="login cursor-pointer bg-transparent">
+          <button key={link.id} className="login cursor-pointer bg-transparent" onClick={()=> {openModel(true)}}>
             <span className="">{link.title}</span>
           </button>
         );

@@ -1,5 +1,6 @@
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
+import { LoginForm } from '../components/LoginForm';
 import { Navbar } from '../components/Navbar';
 import {
   popularCategories,
@@ -12,8 +13,12 @@ import {
   popularResidentialforSale,
   popularUsedCarsForSale,
 } from './../assets/resources';
+import { useState } from 'react';
+
 
 export function HomePage() {
+  const [openModel, setOpenModel] = useState('false')
+
   const ShowCategory = () => {
     let categories = popularCategories.map((category) => (
       <div key={category.id} className="category mt-10 w-15p">
@@ -210,7 +215,8 @@ export function HomePage() {
       <div className="headerContainer d-flex bg-transparent">
         <Header />
       </div>
-      <Navbar />
+      <Navbar openModel={setOpenModel}/>
+      {openModel && <LoginForm />}
       <div className="searchSection  w-85p border-radius-8 ml-10p mt-10">
         <span className="heading fz-24 d-flex justify-content-center align-items-center">
           The best place to <p className="fw-800">buy</p> your house,
