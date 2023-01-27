@@ -179,11 +179,9 @@
   width: 80%;
 }
 
-
 .footerComponent > .footer > .titles {
   display: flex;
 }
-
 
 .footerComponent > .footer > .titles > .title > .link {
   font-weight: 500;
@@ -196,14 +194,99 @@
 
 /* ============================= END OF PAGES ============================ */
 
-
-
 /* =============================LOGIN FORM ============================ */
-.form{
-  
+.modelBackground {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(19, 19, 19, 0.705);
+  position: absolute;
+  top: 0;
 }
 
+.modalContainer {
+  background-color: #fff;
+  padding: 32px 64px;
+  height: max-content;
+  width: 30%;
+}
 
+.modalContainer > .btns {
+  width: 90%;
+  top: 10px;
+  left: 20px;
+}
+
+.modalContainer > .login-close-btn {
+  background-color: #fff;
+  border: none;
+  padding: 1px;
+  top: 10px;
+  right: 10px;
+}
+
+.modalContainer > .btns > button {
+  background-color: #fff;
+  border: none;
+  padding: 1px;
+}
+
+.modalContainer > .btns > .back {
+  background-color: #fff;
+  border: none;
+}
+
+#root > div > div > div.modelBackground > div > div.form > form > div {
+  border: 1px solid rgba(72, 116, 236, 0.788);
+  border-radius: 8px;
+  padding: 3px 10px;
+}
+
+#root > div > div > div.modelBackground > div > div.form > form > div:hover {
+  border: 1px solid rgba(109, 109, 109, 0.849);
+}
+
+.modalContainer > .carouselContainer > .carousel {
+  min-width: 100%;
+  width: 100%;
+  height: 17rem;
+  margin-bottom: 20px;
+  transition: 1.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+/* styling the form buttons */
+#root
+  > div
+  > div
+  > div.modelBackground.d-flex.align-items-center.justify-content-center
+  > div
+  > div.form.text-align-center
+  > form
+  > div
+  > button {
+  background-color: #fff;
+}
+
+.form > .terms > .term {
+  margin-top: 5%;
+}
+
+.modalContainer > .email-form {
+  margin-top: 7%;
+}
+
+.modalContainer > .email-form > form > input {
+  margin: 2% 0%;
+  border: 1px solid gray;
+}
+
+.modalContainer > .email-form > form > button {
+  margin: 8% 0%;
+}
+
+.modalContainer > .email-form > form > button:hover {
+  background-color: rgba(72, 116, 236, 0.788);
+  color: #fff;
+}
 /* ============================= END OF LOGIN FORM ============================ */
 
 /* ============================= HEADER ============================ */
@@ -407,6 +490,10 @@
   text-align: right;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .justify-content-end {
   justify-content: end;
 }
@@ -443,6 +530,10 @@
   font-weight: 800;
 }
 
+.fw-500 {
+  font-weight: 500;
+}
+
 .fz-24 {
   font-size: 24px;
 }
@@ -461,6 +552,10 @@
 
 .fz-10 {
   font-size: 11px;
+}
+
+.fz-20 {
+  font-size: 20px;
 }
 
 .outline-none {
@@ -501,6 +596,10 @@
 
 .mt-10 {
   margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .mt-2p {
@@ -546,5 +645,8 @@
 }
 .flex-wrap-wrap {
   flex-wrap: wrap;
+}
+.flex-wrap-nowrap {
+  flex-wrap: nowrap;
 }
 /* ==================================== end styled classes =========================== */

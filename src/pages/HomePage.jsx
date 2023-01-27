@@ -17,7 +17,7 @@ import { useState } from 'react';
 
 
 export function HomePage() {
-  const [openModel, setOpenModel] = useState('false')
+  const [openModel, setOpenModel] = useState(false)
 
   const ShowCategory = () => {
     let categories = popularCategories.map((category) => (
@@ -213,10 +213,10 @@ export function HomePage() {
   return (
     <div className="home">
       <div className="headerContainer d-flex bg-transparent">
-        <Header />
+        <Header openModel={setOpenModel}/>
       </div>
-      <Navbar openModel={setOpenModel}/>
-      {openModel && <LoginForm />}
+      <Navbar />
+      {openModel && <LoginForm  openModel={setOpenModel}/>}
       <div className="searchSection  w-85p border-radius-8 ml-10p mt-10">
         <span className="heading fz-24 d-flex justify-content-center align-items-center">
           The best place to <p className="fw-800">buy</p> your house,
