@@ -250,7 +250,7 @@
   width: 100%;
   height: 17rem;
   margin-bottom: 20px;
-  transition: 1.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 /* styling the form buttons */
@@ -275,6 +275,11 @@
 }
 
 .modalContainer > .email-form > form > input {
+  margin: 2% 0%;
+  border: 1px solid gray;
+}
+
+.modalContainer > .email-form > form > p {
   margin: 2% 0%;
   border: 1px solid gray;
 }
